@@ -1,4 +1,4 @@
-cdsource 'https://rubygems.org'
+source 'https://rubygems.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -38,11 +38,10 @@ group :development, :test do
   gem 'sqlite3'
 end
 
-group :production do
-
-    gem 'pg'
+group :production do 
+	gem 'rails_12factor'
+	gem 'pg'
 end
-
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
